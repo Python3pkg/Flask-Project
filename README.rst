@@ -47,6 +47,12 @@ Then init tables::
     python manage.py prepare_db
     python manage.py add_user -uhyperwood -ehyperwood.yw@gmail.com -ppassword -rAdministrator
 
+Setup Local Env.
+~~~~~~~~~~~~~~~~
+setup python path and profile::
+
+    copy scripts/env.local.template.sh env.local.sh
+
 Run app
 ~~~~~~~
 
