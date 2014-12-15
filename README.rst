@@ -25,7 +25,7 @@ create project
 
 ::
 
-    flask-project new <template_name> <project_name>
+    flask-project new template_name> <project_name>
 
 Install requirements
 ~~~~~~~~~~~~~~~~~~~~
@@ -51,7 +51,9 @@ Then init tables::
 Run app
 ~~~~~~~
 
-Run local server::
+Run test server:
+
+::
 
     ./test_run.sh
 
