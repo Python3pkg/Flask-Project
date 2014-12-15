@@ -38,8 +38,10 @@ def drop_db():
 @manager.option('-u', '--username', dest="username", required=True)
 @manager.option('-e', '--email', dest="email", required=True)
 @manager.option('-p', '--password', dest="password", required=True)
-def add_user(username, email, password):
-    user = User(username=username, email=email, password=password)
+@manager.option('-r', '--role', dest="role_name", required=False)
+def add_user(username, email, password, role_name="Administrator"):
+    role = Role.query.filter_by(name=role_name).first()
+    user = User(username=username, email=email, password=password, role=role)
     user.confirmed = True
     db.session.add(user)
     db.session.commit()
