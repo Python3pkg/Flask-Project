@@ -1,4 +1,4 @@
-%(project)s
+%(PROJECT_NAME)s
 =======
 
-About %(project)s web site.
+About %(PROJECT_NAME)s web site.
