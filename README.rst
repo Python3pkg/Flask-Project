@@ -1,13 +1,14 @@
 Flask-Project
-===========
+=============
 
 .. image:: http://img.shields.io/pypi/v/flask-project.svg
-   :target: https://pypi.python.org/pypi/flask-project
-   :alt: Latest Version
+    :target: https://pypi.python.org/pypi/flask-project
+    :alt: Latest Version
+
 .. image:: http://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://github.com/hyperwood/Flask-Project/blob/master/LICENSE
-   :alt: The MIT License
-   
+    :target: https://github.com/hyperwood/Flask-Project/blob/master/LICENSE
+    :alt: The MIT License
+
 Flask web project template generator. Inspired by Flask-Boost.
 
 Installation
@@ -18,10 +19,10 @@ Installation
     pip install Flask-Project
 
 Usage
------------------
+-----
 
 create project
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 ::
 
@@ -30,16 +31,14 @@ create project
 Install requirements
 ~~~~~~~~~~~~~~~~~~~~
 
-``cd`` to project root path, run:
- 
-::
+``cd`` to project root path, run::
 
     virtualenv venv
     . venv/bin/active
     pip install -r requirements.txt
 
 prepare database
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 Create database and update ``SQLALCHEMY_DATABASE_URI`` in ``config/development.py`` as needed.
 
@@ -51,9 +50,6 @@ Then init tables::
 Run app
 ~~~~~~~
 
-Run test server:
-
-::
+Run test server::
 
     ./test_run.sh
-
