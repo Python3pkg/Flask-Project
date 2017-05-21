@@ -79,7 +79,7 @@ class ChangeEmailForm(Form):
 class ResendConfirmForm(Form):
     email = StringField('Email', validators=[DataRequired(), Length(1, 64), Email()])
 
-    submit = SubmitField(u'send')
+    submit = SubmitField('send')
 
     def validate_email(self, field):
         user = User.query.filter_by(email=field.data).first()

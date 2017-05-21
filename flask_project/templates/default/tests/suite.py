@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+
 from web_site import db, create_app
 
 

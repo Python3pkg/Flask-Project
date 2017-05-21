@@ -1,6 +1,6 @@
 #!/bin/env python
 # coding=utf-8
-from __future__ import unicode_literals, print_function
+
 import os
 from flask.ext.script import Manager, Shell
 from flask.ext.migrate import Migrate, MigrateCommand

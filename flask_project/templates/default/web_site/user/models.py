@@ -1,5 +1,5 @@
 # coding=utf-8
-from __future__ import unicode_literals, print_function
+
 from flask import request, current_app
 from flask.ext.login import UserMixin, AnonymousUserMixin
 from sqlalchemy.ext.hybrid import hybrid_property

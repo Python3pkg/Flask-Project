@@ -12,7 +12,7 @@ Options:
   -h, --help          Help information.
   -v, --version       Show version.
 """
-from __future__ import unicode_literals
+
 
 import os
 import sys
@@ -21,7 +21,7 @@ from distutils.dir_util import copy_tree
 from uuid import uuid4
 from docopt import docopt
 from functools import partial
-from importing import path_for_import
+from .importing import path_for_import
 import shutil
 from .utils import generate_site_name, generate_site_brand
 from . import log

@@ -1,9 +1,9 @@
 # coding=utf-8
-from __future__ import unicode_literals, print_function
+
 import os
 from flask import render_template
 from functools import wraps
-from urlparse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin
 
 
 def is_safe_url(host_url, target):
@@ -21,7 +21,7 @@ def disable_it(yes=False):
             if yes:
                 return render_template('info_board.html', res={
                     'title': "status",
-                    'info': u"接口暂时关闭"
+                    'info': "接口暂时关闭"
                 })
             return f(*args, **kwargs)
 
